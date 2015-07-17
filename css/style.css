@@ -1,13 +1,10 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
-
-
 body, html{
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: auto;
   overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Jura', sans-serif;
+  font-size: 16px
 }
 @media (min-width: 1200px){
 	.container {
@@ -21,10 +18,10 @@ h1{
 
 h2{
 	text-transform: uppercase;
-	font-size: 20px;
+	font-size: 24px;
 }
 h3{
-	font-size: 14px;
+	font-size: 16px;
 	font-style: italic;
 	font-weight: 100;
 	line-height: 26px;
@@ -32,7 +29,7 @@ h3{
 
 h4{
 	text-transform: uppercase;
-	font-size: 16px;
+	font-size: 18px;
 	word-spacing: 2px;
 }
 h5{
@@ -61,7 +58,7 @@ a:focus{
 	text-decoration: none;
 }
 #home{
-	background: url(../img/bg1.jpg);
+	background: url(../img/wedcolorsbg.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -178,7 +175,7 @@ text-align: center;
 .navbar-default .navbar-offcanvas .navmenu-nav>li>a {
 color: #ffffff;
 text-transform: uppercase;
-font-size: 12px;
+font-size: 18px;
 line-height: 30px;
 }
 nav#menu span.fa.fa-bars:hover {
@@ -217,7 +214,7 @@ background-color: transparent;
 }
 
 a.down-btn span.fa.fa-angle-down {
-	font-size: 26px;
+	font-size: 28px;
 	border: 1px solid #c59a6d;
 	border-radius: 2px;
 	padding: 7px 5px;
@@ -271,9 +268,9 @@ a.down-btn span.fa.fa-angle-down {
 	padding-bottom: 80px;
 }
 .service p{
-	font-size: 14px;
+	font-size: 16px;
 	padding-top: 20px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Jura', sans-serif;
 }
 .space{ padding-top: 40px; }
 
@@ -288,7 +285,7 @@ a.btn.go-to-btn{
 	word-spacing: 2px;
 	padding: 7px 30px;
 	border-radius: 2px;
-	font-size: 12px;
+	font-size: 16px;
 	color: #ffffff;
 	transition: all 0.5s;
 }
@@ -366,7 +363,7 @@ a.btn.read-more-btn{
 	word-spacing: 2px;
 	padding: 7px 30px;
 	border-radius: 2px;
-	font-size: 12px;
+	font-size: 16px;
 	color: #ffffff;
 	transition: all 0.5s;
 }
@@ -381,7 +378,7 @@ a.btn.send-btn{
 	color: #282f35;
 	padding: 15px 35px;
 	border-radius: 0;
-	font-size: 12px;
+	font-size: 18px;
 	color: #ffffff;
 	transition: all 0.5s;
 }
@@ -392,7 +389,7 @@ a.btn.send-btn:hover{
 }
 
 #clients {
-	background: url(../img/bg3.jpg);
+	background: url(../img/wedcolorsbg.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -497,19 +494,19 @@ ul.social li{
 
 ul.social li a{
 	color: #ffffff;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 address strong{
 	text-transform: uppercase;
 	font-style: normal;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Jura', sans-serif;
 }
 address:before{
 	content: "\f041";
 	display: inline-block;
   	font: normal normal normal 14px/1 FontAwesome;
-  	font-size: 20px;
+  	font-size: 22px;
   	text-rendering: auto;
   	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
@@ -520,8 +517,8 @@ address:before{
 }
 address{
 	font-style: italic;
-	font-size: 14px;
-	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-family: 'Jura', sans-serif;
 	letter-spacing: 1px;
 }
 
@@ -535,7 +532,7 @@ margin-bottom: 30px;
 	width: 100%;
 	height: 40px;
 	padding: 7px 12px;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 1.42857143;
 	color: #555;
 	background-color: #1e2429;
@@ -559,29 +556,29 @@ margin-bottom: 30px;
 }
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
     color:    #222222;
-    font-family: 'Lato', sans-serif;
-    font-size: 13px;
+    font-family: 'Jura', sans-serif;
+    font-size: 16px;
     letter-spacing: 1px;
     font-style: italic;
 }
 input:-moz-placeholder, textarea:-moz-placeholder { 
     color:    #222222;
-    font-family: 'Lato', sans-serif;
-    font-size: 13px;
+    font-family: 'Jura', sans-serif;
+    font-size: 16px;
     letter-spacing: 1px;
     font-style: italic;
 }
 input::-moz-placeholder, textarea::-moz-placeholder { 
     color:    #222222;
-    font-family: 'Lato', sans-serif;
-    font-size: 13px;
+    font-family: 'Jura', sans-serif;
+    font-size: 16px;
     letter-spacing: 1px;
     font-style: italic;
 }
 input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
     color:    #222222;
-    font-family: 'Lato', sans-serif;
-    font-size: 13px;
+    font-family: 'Jura', sans-serif;
+    font-size: 16px;
     letter-spacing: 1px;
     font-style: italic;
 }
@@ -594,7 +591,7 @@ nav#footer{
 }
 #footer span.fa{
 	color: #c59a6d;
-	font-size: 26px;
+	font-size: 30px;
 	margin-left: 10px;
 }
 #footer a{
@@ -602,3 +599,13 @@ nav#footer{
 }
 #footer a:hover{
 	color: #c59a6d;}
+
+.margin-bottom {
+	margin-bottom: 15px;
+}
+.margin-top {
+	margin-top: 15px;
+}
+.margin-bottom-large {
+	margin-bottom: 25px;
+}

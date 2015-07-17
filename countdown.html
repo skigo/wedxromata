@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<style type="text/css">
+	body {
+		background: #111111;
+		font-family: sans-serif;
+	}
+	.text {
+		color: #fafafa;
+		text-align: center;
+		font-size: 100px;
+		margin-top: 50px;
+	}
+	.center {
+		width: 100%;
+		text-align: center;
+		margin-top: 15%;
+	}
+</style>
+<div class="center"><img src="img/logo.png"></div>
+<div class="text" id="getting-started"></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.countdown.js"></script>
+
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$("#getting-started")
+		.countdown("2015/07/20", function(event) {
+	    $(this).text(
+	      event.strftime('%H:%M:%S')
+	    );
+	  });
+	});
+</script>
+</body>
+</html>
