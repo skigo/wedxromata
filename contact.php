@@ -8,7 +8,7 @@ header('Cache-Control: no-cache, must-revalidate');
 header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
 header('Content-type: application/json');
 
-$admin_email = 'wedcolors@gmail.com'; // Your Email
+$admin_email = 'nick@wefixit.gr'; // Your Email
 $message_min_length = 5; // Min Message Length
 
 
@@ -19,7 +19,7 @@ class Contact_Form{
 		$this->email = trim($details['email']);
 		$this->tel = trim($details['tel']);
 		$this->subject = trim($details['subject']); // Subject 
-		$this->message = stripslashes($details['message']);
+		$this->message = stripslashes($details['message'])."<p>".stripslashes($details['name'])."</p>";
 		
 	
 		$this->email_admin = $email_admin;
@@ -76,7 +76,7 @@ class Contact_Form{
 
 	private function sendEmail(){
 		$mail = mail($this->email_admin, $this->subject, $this->message,
-			 "From: ".$this->name." ".$this->tel." <".$this->email.">\r\n"
+			 "From: ".$this->name." ".$this->tel." <".$this->email.">\r\nContent-Type: text/html; charset=UTF-8\r\nContent-Transfer-Encoding: 8bit"
 			."Reply-To: ".$this->email."\r\n"
 		."X-Mailer: PHP/" . phpversion());
 	
