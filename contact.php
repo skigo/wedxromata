@@ -8,7 +8,7 @@ header('Cache-Control: no-cache, must-revalidate');
 header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
 header('Content-type: application/json');
 
-$admin_email = 'nick@wefixit.gr'; // Your Email
+$admin_email = 'wedcolors@gmail.com'; // Your Email
 $message_min_length = 5; // Min Message Length
 
 
@@ -18,11 +18,16 @@ class Contact_Form{
 		$this->name = stripslashes($details['name']);
 		$this->email = trim($details['email']);
 		$this->tel = trim($details['tel']);
+<<<<<<< HEAD
 		$this->subject = "New Website Message" //trim($details['subject']); // Subject 
 		$this->message ="<p><strong>Όνομα:</strong> " . stripslashes($details['name']) . "</p>" .
 						"<p><strong>Email:</strong> " . trim($details['email']) . "</p>" . 
 						"<p><strong>Τηλέφωνο:</strong> " . trim($details['tel']) . "</p>" .
 						"<h3>Μήνυμα</h3> <p>" . stripslashes($details['message']) . "</p>";
+=======
+		$this->subject = trim($details['subject']); // Subject 
+		$this->message = stripslashes($details['message']);
+>>>>>>> parent of bb5811b... new contact
 		
 	
 		$this->email_admin = $email_admin;
@@ -79,7 +84,11 @@ class Contact_Form{
 
 	private function sendEmail(){
 		$mail = mail($this->email_admin, $this->subject, $this->message,
+<<<<<<< HEAD
 			 "From: Website Contact <admin@wedcolors.gr>\r\nContent-Type: text/html; charset=UTF-8\r\nContent-Transfer-Encoding: 8bit"
+=======
+			 "From: ".$this->name." ".$this->tel." <".$this->email.">\r\n"
+>>>>>>> parent of bb5811b... new contact
 			."Reply-To: ".$this->email."\r\n"
 		."X-Mailer: PHP/" . phpversion());
 	
