@@ -19,7 +19,7 @@ class Contact_Form{
 		$this->email = trim($details['email']);
 		$this->tel = trim($details['tel']);
 		$this->subject = trim($details['subject']); // Subject 
-		$this->message = stripslashes($details['message'])."<p>".stripslashes($details['name'])."</p>";
+		$this->message = "<p><b>Όνομα:</b> ".stripslashes($details['name'])."</p>"."<p><b>Email:</b> ".trim($details['email'])."</p>"."<p><b>Tel:</b> ".trim($details['tel'])."</p>"."<p>Μήνυμα:</p>"."<p>".stripslashes($details['message'])."</p>";
 
 		
 	
@@ -77,7 +77,7 @@ class Contact_Form{
 
 	private function sendEmail(){
 		$mail = mail($this->email_admin, $this->subject, $this->message,
-			 "From: ".$this->name." ".$this->tel." <".$this->email.">\r\nContent-Type: text/html; charset=UTF-8\r\nContent-Transfer-Encoding: 8bit"
+			 "From: Website Contact <admin@wedcolors.gr>\r\nContent-Type: text/html; charset=UTF-8\r\nContent-Transfer-Encoding: 8bit"
 
 			."Reply-To: ".$this->email."\r\n"
 		."X-Mailer: PHP/" . phpversion());
