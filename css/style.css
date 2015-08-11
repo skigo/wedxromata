@@ -660,3 +660,33 @@ h1.typed {
   	-ms-transform: scale(-1, 1);
   	transform: scale(-1, 1);
 }
+.cover {
+	position: relative;
+	transition:.6s all;
+	width: 80px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.caption {
+	display: none;
+	background-color: rgba(0,0,0,0.35);
+	transition: .3s all;
+	opacity: 0;
+}
+
+.cover:hover .caption {
+	position: absolute;
+	display: block;
+	width: 80px;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(0,0,0,0.35);
+	overflow: hidden;
+	border-radius: 50%;
+	opacity: 1;
+	transition: .3s all;
+}
+.cover span {
+	line-height: 5em;
+}
